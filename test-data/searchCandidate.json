@@ -1,0 +1,8 @@
+{
+  "validSearch": [
+    {
+      "candidateName": "Minh Khoa",
+      "expectedResult": "Success"
+    }
+  ]
+}
