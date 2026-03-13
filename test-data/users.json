@@ -1,0 +1,57 @@
+{
+  "validUsers": [
+    {
+      "role": "Admin",
+      "description": "Login thanh cong voi tai khoan Admin",
+      "username": "Admin",
+      "password": "admin123",
+      "expectedResult": "success",
+      "expectedUrl": "/web/index.php/dashboard/index",
+      "expectedElement": ".oxd-topbar-header-breadcrumb"
+    }
+  ],
+  "invalidUsers": [
+    {
+      "description": "Login that bai voi mat khau sai",
+      "username": "Admin",
+      "password": "wrongpassword",
+      "expectedResult": "failure",
+      "expectedError": "Invalid credentials"
+    },
+    {
+      "description": "Login that bai voi ten dang nhap sai",
+      "username": "invaliduser",
+      "password": "admin123",
+      "expectedResult": "failure",
+      "expectedError": "Invalid credentials"
+    },
+    {
+      "description": "Login that bai voi ca username va password sai",
+      "username": "fakeuser",
+      "password": "fakepassword",
+      "expectedResult": "failure",
+      "expectedError": "Invalid credentials"
+    },
+    {
+      "description": "Login that bai voi username trong",
+      "username": "",
+      "password": "admin123",
+      "expectedResult": "failure",
+      "expectedError": "Required"
+    },
+    {
+      "description": "Login that bai voi password trong",
+      "username": "Admin",
+      "password": "",
+      "expectedResult": "failure",
+      "expectedError": "Required"
+    },
+    {
+      "description": "Login that bai voi ca hai truong trong",
+      "username": "",
+      "password": "",
+      "expectedResult": "failure",
+      "expectedError": "Required"
+    }
+  ]
+}

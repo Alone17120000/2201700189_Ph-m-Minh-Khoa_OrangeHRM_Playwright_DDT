@@ -1,0 +1,10 @@
+{
+  "candidates": [
+    {
+      "firstName": "Minh",
+      "lastName": "Khoa",
+      "email": "khoa.test@gmail.com",
+      "expectedResult": "Success"
+    }
+  ]
+}
